@@ -1,4 +1,4 @@
-import Count from "./count";
+import {Count, HookCount } from "./count";
 import { Button } from "./Button";
 
 function App() {
@@ -6,7 +6,11 @@ function App() {
   // if you want to add classes you use className instead of class
   // if you want to add two or more divisions you need to wrap them in a div
 
-  return <div 
+  return  ( 
+  <div 
+
+  // style is an object
+  // the object is an expression
     style={{
       display: 'flex',
       flexDirection: 'column',
@@ -18,12 +22,13 @@ function App() {
     {/* using division doesn't necessitate the usage of the fragment */}
     {/* do this if you do not plan or intend to add more elements */}
     <Count />
+    <HookCount />
     {/* <Count></Count> */}
     <Button />
-    
+  
   </div>
   
-
+  );
 }
 
 export default App

@@ -12,3 +12,5 @@ export const Button = () => {
     // instead pass a reference to the function
     return <button onClick={handleClick}>+</button>
 }
+
+// this is an event handler
