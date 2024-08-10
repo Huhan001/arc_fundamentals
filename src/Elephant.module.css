@@ -1,6 +1,7 @@
 .App {
     display: flex;
-    flex-direction: column; /* stacks item on top of each other */
+    flex-direction: column; 
+    /* stacks item on top of each other */
     align-items: center; /* centers items horizontally */
     /* justify-content: center;  doesn't do it because the app itself needs to have extended to the bottom*/
     height: 100vh;
@@ -9,7 +10,7 @@
 }
 
 .appear {
-    font-size: 50px;
+    font-size: 70px;
     color: red;
 }
 
@@ -19,6 +20,6 @@
 }
 
 .drink {
-    font-size: 55px;
-    color: rgb(204, 255, 0);
+    font-size: 70px;
+    color: rgb(255, 196, 0);
 }
