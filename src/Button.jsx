@@ -14,3 +14,23 @@ export const Button = () => {
 }
 
 // this is an event handler
+
+export const Button2 = ({setCount}) => {
+
+    return (
+        <button onClick={() => setCount((prev) => prev + 1)} >+</button> 
+        // im calling it all the time hence why its failing
+    )
+}
+
+export const Button3 = ({setCount}) => {
+    return (
+        <button onClick={() => setCount(prev => prev -1)}> - </button>
+    )
+}
+
+export const Button4 = ({setCount}) => {
+    let resets = 0
+    return <button onClick={() => setCount((prev) => prev = resets)}> 🌯 </button>
+}
+

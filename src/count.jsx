@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import style from './Elephant.module.css'
 
 export const Count = () => {
 
@@ -32,4 +33,17 @@ export const HookCount =() => {
     // i should never call a function from in here but rather supply it
     // return <span onClick={handleClick}> {number} </span>
     return <span onClick={() => setNumber(number + 2)}> {number}</span>
+}
+
+export const CountValue = ({number}) => {
+    useEffect(() => {
+        document.title = `You clicked ${number} times`
+
+        return () => {document.title = `standard cleanup`}
+    }, [number]);
+    // useEffect is a hook that is used to perform side effects in a function component
+    // useEffect is called after the component has been rendered
+    // useEffect are used to manipulate the DOM or perform side effects like API calls
+
+    return <h1 className= {number === 0 ? style.appear : number < 10 ? style.disappear: style.drink}> {number}</h1>
 }
