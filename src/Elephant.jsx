@@ -24,6 +24,6 @@ export const Elephant2 = () => {
 
 export const Elephant3 = () => {
     return (
-        <span className=''>whatever it be</span>
+        <span className= {style.drink}>whatever it be</span>
     )
 }
